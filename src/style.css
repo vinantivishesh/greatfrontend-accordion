@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+}
+
+button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* works with flex */
+  align-items: center; /* aligns text vertically at center */
+  padding: 4px; /* distance from button border */
+  background: none;
+  border: 0ch;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.accordion-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.accordion-item:not(:first-child) {
+  border-top: 1px solid #eee;
+}
+
+button:hover {
+  background-color: #eee;
+}
+
+.accordion-contents {
+  font-size: small;
+}
